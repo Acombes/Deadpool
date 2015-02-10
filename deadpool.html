@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+    <style type="text/css">
+        .deadpool {
+            background-color: #8f0000;
+            border-radius: 100%;
+            border: 5px solid #000;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .deadpool > div {
+            background: #000;
+            width: 80%;
+            height: 80%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            border-radius: 100%;
+            display: none;
+        }
+        .deadpool:before, .deadpool:after {
+            content: "";
+            display: block;
+            width: 35%;
+            height: 80%;
+            position: absolute;
+            top: 10%;
+            bottom: 10%;
+            background: #fff;
+            box-sizing: border-box;
+            border: 5px solid #000;
+            border-top-width: 100px;
+            border-bottom-width: 100px;
+        }
+        .deadpool:before {
+            left: 10%;
+            border-top-left-radius: 100% 50%;
+            border-bottom-left-radius: 100% 50%;
+            border-left-width: 75px;
+        }
+        .deadpool:after {
+            right: 10%;
+            border-top-right-radius: 100% 50%;
+            border-bottom-right-radius: 100% 50%;
+            border-right-width: 75px;
+        }
+    </style>
+</head>
+<body>
+<div class="deadpool" style="width: 400px;height: 400px;margin: auto;"></div>
+</body>
+</html>
